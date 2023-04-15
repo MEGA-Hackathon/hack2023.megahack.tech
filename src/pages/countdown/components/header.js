@@ -41,14 +41,14 @@ const ReturnLink = styled.a`
 	color: ${({ theme }) => theme.colors.primary};
 	text-decoration: none;
 `;
-const Timer = ({ hours, minutes, seconds }) => (
+const Timer = ({ hours, minutes, seconds, width }) => (
 	<>
 		{hours}
 		<Unit>H</Unit>
-		<Delim />
+		{width > 800 ? <Delim /> : <br />}
 		{minutes}
 		<Unit>M</Unit>
-		<Delim />
+		{width > 800 ? <Delim /> : <br />}
 		{seconds}
 		<Unit>S</Unit>
 	</>
@@ -57,6 +57,8 @@ const Timer = ({ hours, minutes, seconds }) => (
 const EndDate = new Date("Sun, 16 Apr 2023 12:00:00 EST");
 
 export const Header = () => {
+	const width = window.innerWidth;
+
 	const [inProgress, setInProgress] = React.useState(true);
 	const [time, setTime] = React.useState({ hours: 11, minutes: 59, seconds: 59 });
 	useEffect(() => {
@@ -85,7 +87,7 @@ export const Header = () => {
 			<Center>
 				<Countdown>
 					{inProgress ? (
-						<Timer hours={time.hours} minutes={time.minutes} seconds={time.seconds} />
+						<Timer width={width} hours={time.hours} minutes={time.minutes} seconds={time.seconds} />
 					) : (
 						"Event Ended"
 					)}

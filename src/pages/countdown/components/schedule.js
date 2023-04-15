@@ -44,13 +44,129 @@ export const Schedule = () => {
 							<Paragraph>
 								<br />
 								<b>5:00-5:30 p.m.</b>
+								<p>[Opening Ceremony] Conducted by Agni </p>
+							</Paragraph>
+							<Paragraph>
+								<br />
+								<b>5:30-5:40 p.m.</b>
+								<p>[HyperEx Tutorial], Conducted by Daniel Achacon </p>
+							</Paragraph>
+							<Paragraph>
+								<br />
+								<b>6:00-6:30 p.m.</b>
+								<p>
+									[Rahul Desai, General Manager at Sylva] Moderated by Daniel Achacon
+								</p>
+							</Paragraph>
+							<Paragraph>
+								<br />
+								<b>6:30-7:00 p.m.</b>
+								<p>
+									[Avi Patel, CEO of Nitrility] Moderated by Chul
+								</p>
+							</Paragraph>
+							<Paragraph>
+								<br />
+								<b>7:00-7:30 p.m.</b>
+								<p>
+									[Brian Whaley VP at American Express] Moderated by Agni
+								</p>
+							</Paragraph>
+							<Paragraph>
+								<br />
+								<b>7:30-8:00 p.m.</b>
+								<p>
+									[Chetan Zanwar Product Lead at Tiktok] Moderated by Jason Xu
+								</p>
+							</Paragraph>
+							<Paragraph>
+								<br />
+								<b>8:00-8:30 p.m.</b>
+								<p>
+									[Form Teams!!] Moderated by Daniel Achacon and Max Xiong
+								</p>
 							</Paragraph>
 						</Fri>
 						<Sat>
+							{/* 
+12:00-12:30 p.m. [NGO Theme Reveals and Sponsor/NGO/Partner networking session] Moderated by Agni 
+
+2:00-2:30 p.m. [ML 101] Conducted by Daniel Tian 
+
+2:30-3:00 p.m. [Web/APP Development] Conducted by Larry Liu 
+
+3:00-3:30 p.m. [Intro to Competitive Programming] Conducted by Max Xiong 
+
+3:30-3:40 p.m. [Intro to CAD] Conducted by Arnav Kalapala from Youth Code Foundation
+
+6:00-7:00 p.m. [TECH HELP]-All 
+
+9:00-10:00 p.m. [GAME NIGHT]   */}
 							<Subheader>Saturday</Subheader>
+							<Paragraph>
+								<br />
+								<b>12:00-12:30 p.m.</b>
+								<p>
+									[NGO Theme Reveals and Sponsor/NGO/Partner networking session]
+									Moderated by Agni
+								</p>
+							</Paragraph>
+							<Paragraph>
+								<br />
+								<b>2:00-2:30 p.m.</b>
+								<p>[ML 101] Conducted by Daniel Tian</p>
+							</Paragraph>
+							<Paragraph>
+								<br />
+								<b>2:30-3:00 p.m.</b>
+								<p>[Web/APP Development] Conducted by Larry Liu</p>
+							</Paragraph>
+							<Paragraph>
+								<br />
+								<b>3:00-3:30 p.m.</b>
+								<p>[Intro to Competitive Programming] Conducted by Max Xiong</p>
+							</Paragraph>
+							<Paragraph>
+								<br />
+								<b>3:30-3:40 p.m.</b>
+								<p>
+									[Intro to CAD] Conducted by Arnav Kalapala from Youth Code
+									Foundation
+								</p>
+							</Paragraph>
+							<Paragraph>
+								<br />
+								<b>6:00-7:00 p.m.</b>
+								<p>[TECH HELP]-All</p>
+							</Paragraph>
+							<Paragraph>
+								<br />
+								<b>9:00-10:00 p.m.</b>
+								<p>[GAME NIGHT]</p>
+							</Paragraph>
 						</Sat>
 						<Sun>
 							<Subheader>Sunday</Subheader>
+							{/* 12:00 p.m. [Submissions Due] 
+
+12:00p.m.-12:30p.m. [Submission help] 
+
+1:00 p.m. [Submissions close] & [Closing Ceremony] */}
+							<Paragraph>
+								<br />
+								<b>12:00 p.m.</b>
+								<p>[Submissions Due]</p>
+							</Paragraph>
+							<Paragraph>
+								<br />
+								<b>12:00p.m.-12:30p.m.</b>
+								<p>[Submission help]</p>
+							</Paragraph>
+							<Paragraph>
+								<br />
+								<b>1:00 p.m.</b>
+								<p>[Submissions close] & [Closing Ceremony]</p>
+							</Paragraph>
 						</Sun>
 					</>
 				)}
