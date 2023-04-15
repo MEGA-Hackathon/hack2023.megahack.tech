@@ -7,9 +7,9 @@ const GlobalStyles = createGlobalStyle`
 	html, body {
 		margin: 0;
 		padding: 0;
-		font-family: "Montserrat", sans-serif;
 		color: ${({ theme }) => theme.colors.contrast};
 		background-color: ${({ theme }) => theme.colors.main};
+		font-family: "Montserrat", sans-serif;
 	}
 	
 	body, input, textarea, button {

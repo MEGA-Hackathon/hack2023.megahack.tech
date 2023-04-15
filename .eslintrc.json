@@ -19,6 +19,7 @@
         "plugin:prettier/recommended"
 	],
 	"rules": {
-		"prettier/prettier": "warn"
+		"prettier/prettier": "warn",
+		"react/prop-types": "off"
 	}
 }
