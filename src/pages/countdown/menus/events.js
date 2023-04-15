@@ -26,6 +26,10 @@ const Subheader = styled.div`
 
 	margin-top: 1.5rem;
 	margin-bottom: 0.5rem;
+
+	@media (max-width: 768px) {
+		font-size: 32px;
+	}
 `;
 const EmbedYoutube = styled.iframe`
 	border-radius: 20px;
