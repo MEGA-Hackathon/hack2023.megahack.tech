@@ -42,10 +42,11 @@ const GuestsContainer = styled.div`
 	margin: 3rem 0;
 `;
 
-const WorkshopGridsLg = `Grid1 Grid2`;
+const WorkshopGridsLg = `Grid1 Grid2 Grid3`;
 const WorkshopGrids = `
 	Grid1
 	Grid2
+	Grid3
 `;
 
 export const Events = () => {
@@ -76,7 +77,7 @@ export const Events = () => {
 
 			<Subheader>Workshops</Subheader>
 			<Composition areas={WorkshopGrids} areasLg={WorkshopGridsLg} gap={5}>
-				{({ Grid1, Grid2 }) => (
+				{({ Grid1, Grid2, Grid3 }) => (
 					<>
 						<Grid1>
 							<EmbedYoutube
@@ -94,6 +95,14 @@ export const Events = () => {
 								allowfullscreen
 							/>
 						</Grid2>
+						<Grid3>
+							<EmbedYoutube
+								width="100%"
+								src="https://www.youtube.com/embed/SYHUMH_hrfo"
+								title="Workshop 3"
+								allowfullscreen
+							/>
+						</Grid3>
 					</>
 				)}
 			</Composition>
