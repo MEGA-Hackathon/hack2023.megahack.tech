@@ -15,6 +15,10 @@ const Header = styled.div`
 
 	margin-top: 2rem;
 	margin-bottom: 3rem;
+
+	@media (max-width: 768px) {
+		font-size: 42px;
+	}
 `;
 
 const Subheader = styled.div`
@@ -30,13 +34,18 @@ const Paragraph = styled.div`
 	font-weight: 400;
 `;
 
-const areas = `Fri Sat Sun`;
+const scheduleGrid = `
+	Fri
+	Sat
+	Sun
+`;
+const scheduleGridLg = `Fri Sat Sun`;
 
 export const Schedule = () => {
 	return (
 		<Container>
 			<Header>SCHEDULE</Header>
-			<Composition areas={areas}>
+			<Composition areas={scheduleGrid} areasLg={scheduleGridLg} gutterRow={60}>
 				{({ Fri, Sat, Sun }) => (
 					<>
 						<Fri>

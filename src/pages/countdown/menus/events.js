@@ -14,6 +14,10 @@ const Header = styled.div`
 
 	margin-top: 0.5rem;
 	margin-bottom: 0;
+
+	@media (max-width: 768px) {
+		font-size: 42px;
+	}
 `;
 const Subheader = styled.div`
 	font-size: 42px;
@@ -25,6 +29,10 @@ const Subheader = styled.div`
 `;
 const EmbedYoutube = styled.iframe`
 	border-radius: 20px;
+	aspect-ratio: 605 / 340;
+	@media (max-width: 768px) {
+		width: 100%;
+	}
 `;
 const GuestsContainer = styled.div`
 	margin: 3rem 0;
@@ -42,8 +50,7 @@ export const Events = () => {
 			<Header>EVENTS</Header>
 			<Subheader>Opening Ceremony</Subheader>
 			<EmbedYoutube
-				width="605"
-				height="340"
+				width="60%"
 				src="https://www.youtube.com/embed/m2CqgnospmQ"
 				title="Opening Ceremony"
 				allowfullscreen
@@ -51,8 +58,7 @@ export const Events = () => {
 
 			<Subheader>Guest Speakers</Subheader>
 			<EmbedYoutube
-				width="605"
-				height="340"
+				width="60%"
 				src="https://www.youtube.com/embed/MtJf1waAC4E"
 				title="Guest Speakers"
 				allowfullscreen
@@ -65,13 +71,12 @@ export const Events = () => {
 			</GuestsContainer>
 
 			<Subheader>Workshops</Subheader>
-			<Composition areas={WorkshopGrids} areasLg={WorkshopGridsLg} gap={0}>
+			<Composition areas={WorkshopGrids} areasLg={WorkshopGridsLg} gap={5}>
 				{({ Grid1, Grid2 }) => (
 					<>
 						<Grid1>
 							<EmbedYoutube
-								width="507"
-								height="284"
+								width="100%"
 								src="https://www.youtube.com/embed/OusZxkDVEkw"
 								title="Workshop 1"
 								allowfullscreen
@@ -79,8 +84,7 @@ export const Events = () => {
 						</Grid1>
 						<Grid2>
 							<EmbedYoutube
-								width="507"
-								height="284"
+								width="100%"
 								src="https://www.youtube.com/embed/aGsgBEJc_Vs"
 								title="Workshop 2"
 								allowfullscreen
