@@ -54,7 +54,7 @@ const Timer = ({ hours, minutes, seconds, width }) => (
 	</>
 );
 
-const EndDate = new Date("Sun, 16 Apr 2023 12:00:00 EST");
+const EndDate = new Date("Sun, 16 Apr 2023 11:00:00 EST");
 
 export const Header = () => {
 	const width = window.innerWidth;
