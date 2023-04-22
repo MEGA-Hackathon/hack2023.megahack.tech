@@ -54,7 +54,7 @@ const Timer = ({ hours, minutes, seconds, width }) => (
 	</>
 );
 
-const EndDate = new Date("Sun, 16 Apr 2023 11:00:00 EST");
+const EndDate = new Date("Sun, 23 Apr 2023 12:00:00 EST");
 
 export const Header = () => {
 	const width = window.innerWidth;
@@ -92,7 +92,7 @@ export const Header = () => {
 						"Event Ended"
 					)}
 				</Countdown>
-				{inProgress && <Subheader>Until Submission</Subheader>}
+				{inProgress && <Subheader>Until Closing</Subheader>}
 				<div style={{ margin: "1% 0px", padding: "3px 0px" }} />
 				<ReturnLink href="https://megahack.tech/">Return to Main Website</ReturnLink>
 			</Center>
