@@ -89,10 +89,22 @@ export const Header = () => {
 					{inProgress ? (
 						<Timer width={width} hours={time.hours} minutes={time.minutes} seconds={time.seconds} />
 					) : (
-						"Event Ended"
+						<iframe
+							width="560"
+							height="315"
+							src="https://www.youtube.com/embed/QpD-9m6d6zk"
+							title="YouTube video player"
+							frameBorder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowFullScreen
+						/>
 					)}
 				</Countdown>
-				{inProgress && <Subheader>Until Closing</Subheader>}
+				{inProgress ? (
+					<Subheader>Until Closing Ceremony</Subheader>
+				) : (
+					<Subheader>Watch Closing Ceremony</Subheader>
+				)}
 				<div style={{ margin: "1% 0px", padding: "3px 0px" }} />
 				<ReturnLink href="https://megahack.tech/">Return to Main Website</ReturnLink>
 			</Center>
