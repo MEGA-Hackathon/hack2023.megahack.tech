@@ -1,10 +1,10 @@
-import { Composition } from "atomic-layout";
 import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
 	padding: 0px 10%;
 	text-align: center;
+	margin-bottom: 150px;
 `;
 const Header = styled.div`
 	font-size: 68px;
@@ -12,11 +12,16 @@ const Header = styled.div`
 	font-weight: 400;
 	letter-spacing: 20px;
 
-	margin-top: 0.5rem;
+	margin-top: 5rem;
 	margin-bottom: 0;
 
 	@media (max-width: 768px) {
 		font-size: 42px;
+	}
+
+	@media screen and (max-width: 450px) {
+		font-size: 35px;
+		letter-spacing: 10px;
 	}
 `;
 const Subheader = styled.div`
@@ -38,15 +43,37 @@ const EmbedYoutube = styled.iframe`
 		width: 100%;
 	}
 `;
-const GuestsContainer = styled.div`
-	margin: 3rem 0;
+
+const MatchupBracket = styled.div`
+	display: flex;
+	height: 150px;
+	width: 100%;
+	max-width: 800px;
+	gap: 1px;
 `;
 
-const WorkshopGridsLg = `Grid1 Grid2 Grid3`;
-const WorkshopGrids = `
-	Grid1
-	Grid2
-	Grid3
+const MatchupBracketSingle = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-items: center;
+	padding: 15px;
+	width: 100%;
+	height: 100%;
+	background: rgb(139, 82, 254);
+`;
+
+const MatchupBracketSingleText = styled.p`
+	color: #fff;
+	font-size: 20px;
+`;
+
+const MatchupBrackets = styled.div`
+	display: flex;
+	flex-flow: column;
+	gap: 45px;
+	margin-top: 15px;
+	align-items: center;
 `;
 
 export const Events = () => {
@@ -56,56 +83,30 @@ export const Events = () => {
 			<Subheader>Opening Ceremony</Subheader>
 			<EmbedYoutube
 				width="60%"
-				src="https://www.youtube.com/embed/m2CqgnospmQ"
+				src="https://www.youtube.com/embed/5oWl4ldxSIs"
 				title="Opening Ceremony"
 				allowfullscreen
 			/>
-
-			<Subheader>Guest Speakers</Subheader>
-			<EmbedYoutube
-				width="60%"
-				src="https://www.youtube.com/embed/MtJf1waAC4E"
-				title="Guest Speakers"
-				allowfullscreen
-			/>
-			<GuestsContainer>
-				<img
-					src="https://media.discordapp.net/attachments/857650733233995776/1096546475355426928/Frame_1.png"
-					width="100%"
-				/>
-			</GuestsContainer>
-
-			<Subheader>Workshops</Subheader>
-			<Composition areas={WorkshopGrids} areasLg={WorkshopGridsLg} gap={5}>
-				{({ Grid1, Grid2, Grid3 }) => (
-					<>
-						<Grid1>
-							<EmbedYoutube
-								width="100%"
-								src="https://www.youtube.com/embed/OusZxkDVEkw"
-								title="Workshop 1"
-								allowfullscreen
-							/>
-						</Grid1>
-						<Grid2>
-							<EmbedYoutube
-								width="100%"
-								src="https://www.youtube.com/embed/aGsgBEJc_Vs"
-								title="Workshop 2"
-								allowfullscreen
-							/>
-						</Grid2>
-						<Grid3>
-							<EmbedYoutube
-								width="100%"
-								src="https://www.youtube.com/embed/SYHUMH_hrfo"
-								title="Workshop 3"
-								allowfullscreen
-							/>
-						</Grid3>
-					</>
-				)}
-			</Composition>
+			<Header>Pairing and Matchups</Header>
+			<Subheader>Round 1:</Subheader>
+			<MatchupBrackets>
+				<MatchupBracket>
+					<MatchupBracketSingle>
+						<MatchupBracketSingleText>Yaasir Adeyemo & Nisha Bhardwaj</MatchupBracketSingleText>
+					</MatchupBracketSingle>
+					<MatchupBracketSingle>
+						<MatchupBracketSingleText>Sebastian Cho & Vishnu Nataraja</MatchupBracketSingleText>
+					</MatchupBracketSingle>
+				</MatchupBracket>
+				<MatchupBracket>
+					<MatchupBracketSingle>
+						<MatchupBracketSingleText>Alp Battal & Selen Melis Battal</MatchupBracketSingleText>
+					</MatchupBracketSingle>
+					<MatchupBracketSingle>
+						<MatchupBracketSingleText>Erick Li Li</MatchupBracketSingleText>
+					</MatchupBracketSingle>
+				</MatchupBracket>
+			</MatchupBrackets>
 		</Container>
 	);
 };

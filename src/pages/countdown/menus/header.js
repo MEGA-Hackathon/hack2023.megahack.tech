@@ -54,13 +54,14 @@ const Timer = ({ hours, minutes, seconds, width }) => (
 	</>
 );
 
-const EndDate = new Date("Sun, 23 Apr 2023 12:00:00 EST");
+const EndDate = new Date("Sun, 21 May 2023 15:00:00 PST");
 
 export const Header = () => {
 	const width = window.innerWidth;
 
 	const [inProgress, setInProgress] = React.useState(true);
 	const [time, setTime] = React.useState({ hours: 11, minutes: 59, seconds: 59 });
+
 	useEffect(() => {
 		const interval = setInterval(() => {
 			// Get time difference
