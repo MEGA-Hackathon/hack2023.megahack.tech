@@ -89,24 +89,7 @@ export const Events = () => {
 			/>
 			<Header>Pairing and Matchups</Header>
 			<Subheader>Round 1:</Subheader>
-			<MatchupBrackets>
-				<MatchupBracket>
-					<MatchupBracketSingle>
-						<MatchupBracketSingleText>Yaasir Adeyemo & Nisha Bhardwaj</MatchupBracketSingleText>
-					</MatchupBracketSingle>
-					<MatchupBracketSingle>
-						<MatchupBracketSingleText>Sebastian Cho & Vishnu Nataraja</MatchupBracketSingleText>
-					</MatchupBracketSingle>
-				</MatchupBracket>
-				<MatchupBracket>
-					<MatchupBracketSingle>
-						<MatchupBracketSingleText>Alp Battal & Selen Melis Battal</MatchupBracketSingleText>
-					</MatchupBracketSingle>
-					<MatchupBracketSingle>
-						<MatchupBracketSingleText>Erick Li Li</MatchupBracketSingleText>
-					</MatchupBracketSingle>
-				</MatchupBracket>
-			</MatchupBrackets>
+			<iframe src="https://challonge.com/mega_rxd_d2_knockouts/module" width="100%" height="500" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
 		</Container>
 	);
 };
