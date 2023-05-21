@@ -63,8 +63,8 @@ export const Events = () => {
 			<Header>Pairing and Matchups</Header>
 			<Subheader>Round 1:</Subheader>
 			<Bracket 
-				width="100%";
-				src = "https://challonge.com/mega_rxd_d2_knockouts/module
+				width="100%"
+				src = "https://challonge.com/mega_rxd_d2_knockouts/module"
 				allowfullscreen
 			/>
 		</Container>
