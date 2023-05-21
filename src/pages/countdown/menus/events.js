@@ -45,10 +45,9 @@ const EmbedYoutube = styled.iframe`
 `;
 
 const Bracket = styled.iframe`
-	width: 100%;
-	height = 500;
+	height:500;
 	frameBorder:0;
-	scrolling="auto";
+	scrolling:"auto";
 `;
 export const Events = () => {
 	return (
@@ -64,7 +63,9 @@ export const Events = () => {
 			<Header>Pairing and Matchups</Header>
 			<Subheader>Round 1:</Subheader>
 			<Bracket 
+				width:"100%";
 				src = "https://challonge.com/mega_rxd_d2_knockouts/module
+				allowfullscreen
 			/>
 		</Container>
 	);
