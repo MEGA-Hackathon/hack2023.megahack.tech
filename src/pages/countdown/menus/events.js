@@ -43,39 +43,6 @@ const EmbedYoutube = styled.iframe`
 		width: 100%;
 	}
 `;
-
-const MatchupBracket = styled.div`
-	display: flex;
-	height: 150px;
-	width: 100%;
-	max-width: 800px;
-	gap: 1px;
-`;
-
-const MatchupBracketSingle = styled.div`
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	align-items: center;
-	padding: 15px;
-	width: 100%;
-	height: 100%;
-	background: rgb(139, 82, 254);
-`;
-
-const MatchupBracketSingleText = styled.p`
-	color: #fff;
-	font-size: 20px;
-`;
-
-const MatchupBrackets = styled.div`
-	display: flex;
-	flex-flow: column;
-	gap: 45px;
-	margin-top: 15px;
-	align-items: center;
-`;
-
 export const Events = () => {
 	return (
 		<Container>
@@ -89,7 +56,7 @@ export const Events = () => {
 			/>
 			<Header>Pairing and Matchups</Header>
 			<Subheader>Round 1:</Subheader>
-			<iframe src="https://challonge.com/mega_rxd_d2_knockouts/module" width="100%" height="500" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
+			<iframe src="https://challonge.com/mega_rxd_d2_knockouts/module" width="100%" height="500" frameBorder="0" scrolling="auto"></iframe>
 		</Container>
 	);
 };
