@@ -43,6 +43,13 @@ const EmbedYoutube = styled.iframe`
 		width: 100%;
 	}
 `;
+
+const Bracket = styled.iframe`
+	width: 100%;
+	height = 500;
+	frameBorder:0;
+	scrolling="auto";
+`}
 export const Events = () => {
 	return (
 		<Container>
@@ -56,7 +63,10 @@ export const Events = () => {
 			/>
 			<Header>Pairing and Matchups</Header>
 			<Subheader>Round 1:</Subheader>
-			<iframe src="https://challonge.com/mega_rxd_d2_knockouts/module" width="100%" height="500" frameBorder="0" scrolling="auto"></iframe>
+			<Bracket
+				src = "https://challonge.com/mega_rxd_d2_knockouts/module
+				allowfullscreen
+			/>
 		</Container>
 	);
 };
