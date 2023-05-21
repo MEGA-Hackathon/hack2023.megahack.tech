@@ -49,7 +49,7 @@ const Bracket = styled.iframe`
 	height = 500;
 	frameBorder:0;
 	scrolling="auto";
-`}
+`;
 export const Events = () => {
 	return (
 		<Container>
