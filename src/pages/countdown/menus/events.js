@@ -63,9 +63,8 @@ export const Events = () => {
 			/>
 			<Header>Pairing and Matchups</Header>
 			<Subheader>Round 1:</Subheader>
-			<Bracket
+			<Bracket 
 				src = "https://challonge.com/mega_rxd_d2_knockouts/module
-				allowfullscreen
 			/>
 		</Container>
 	);
